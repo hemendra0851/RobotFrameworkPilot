@@ -1,0 +1,4 @@
+﻿Test Case Name,Browser,Data_File_Names,DataSheets,Run_Flag,Tag_Name
+TC_01.robot,,DataTable.xlsx,Data,no,
+TC_02.robot,,DataTable.xlsx,Data,yes,
+TC_03.robot,,DataTable.xlsx,Data,no,

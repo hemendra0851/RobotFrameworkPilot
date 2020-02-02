@@ -1,0 +1,15 @@
+google:
+  url: 'https://www.google.com'
+  edtSearch: //input[@class="gLFyf gsfi"]
+  txtSearch: Robot Framework
+  edtLink: "(//h3[@class='LC20lb'])[1]"
+  imgLogo: (//img[@alt='Robot Frameworkg logo'])[1]
+
+amazon:
+  url: 'https://www.amazon.in/'
+  loginTitle: 'Online Shopping site in India'
+  edtSearch: //input[@id='twotabsearchtextbox']
+  txtSearch: 'Puma Shoes'
+  txtResult: //span[@class='a-color-state a-text-bold']
+  result: (//span[@class='a-size-base-plus a-color-base a-text-normal'])[12]
+  
