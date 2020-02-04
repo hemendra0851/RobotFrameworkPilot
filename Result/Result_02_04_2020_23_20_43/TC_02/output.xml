@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200204 23:20:43.761" rpa="false">
+<suite id="s1" name="TC 02" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\TC_02.robot">
+<test id="s1-t1" name="TC_02">
+<kw name="GetData" library="Main">
+<arguments>
+<arg>DataTable.Data</arg>
+<arg>TC_01</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200204 23:20:44.792" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'F:\\Study\\RobotFramework\\RobotFrameworkPilot\\TestAsset\\DataTable.xlsx'</msg>
+<status status="FAIL" starttime="20200204 23:20:44.777" endtime="20200204 23:20:44.792"></status>
+</kw>
+<status status="FAIL" starttime="20200204 23:20:44.777" endtime="20200204 23:20:44.792"></status>
+</kw>
+<status status="FAIL" starttime="20200204 23:20:44.777" endtime="20200204 23:20:44.792" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'F:\\Study\\RobotFramework\\RobotFrameworkPilot\\TestAsset\\DataTable.xlsx'</status>
+</test>
+<status status="FAIL" starttime="20200204 23:20:43.761" endtime="20200204 23:20:44.792"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TC 02">TC 02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

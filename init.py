@@ -50,7 +50,7 @@ if __name__ == "__main__":
 	print("Reading Run Manager.............")
 	obj.readRunManager()
 
-	print("\nStarting Execution............")
+	print("Starting Execution............")
 	mainoutputdir = obj.executeScripts()
 
 	print("\nStarting merging of Results...\n")

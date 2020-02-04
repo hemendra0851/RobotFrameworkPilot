@@ -1,6 +1,8 @@
 import pandas as pd
+from os.path import dirname, abspath
 
-filePath = "F:\\Study\\RobotFramework\\RF_Pilot\\TestAsset\\DataTables\\"
+filePath = dirname(dirname(abspath(__file__))) + "\\DataTables\\"
+print(filePath)
 
 def readRow(fileDetail, rowId):
 	fileName = filePath + fileDetail.split('.')[0] + ".xlsx"
@@ -10,9 +12,5 @@ def readRow(fileDetail, rowId):
 	rowDict = dataframe.set_index('TestCaseName').T.to_dict('dict')[rowId]
 	return rowDict
 
-
-### Add validation to check if file present
-### Add validation to check sheet exists
-### Add validation to check if column exists
 
 

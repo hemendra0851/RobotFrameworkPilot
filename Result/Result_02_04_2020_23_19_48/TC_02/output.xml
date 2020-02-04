@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200204 23:19:49.000" rpa="false">
+<suite id="s1" name="TC 02" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\TC_02.robot">
+<test id="s1-t1" name="TC_02">
+<kw name="GetData" library="Main">
+<arguments>
+<arg>DataTable.Data</arg>
+<arg>TC_01</arg>
+</arguments>
+<kw name="readRow">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}=</var>
+</assign>
+<msg timestamp="20200204 23:19:50.020" level="FAIL">No keyword with name 'readRow' found.</msg>
+<status status="FAIL" starttime="20200204 23:19:50.020" endtime="20200204 23:19:50.020"></status>
+</kw>
+<status status="FAIL" starttime="20200204 23:19:50.004" endtime="20200204 23:19:50.020"></status>
+</kw>
+<status status="FAIL" starttime="20200204 23:19:50.004" endtime="20200204 23:19:50.020" critical="yes">No keyword with name 'readRow' found.</status>
+</test>
+<status status="FAIL" starttime="20200204 23:19:49.000" endtime="20200204 23:19:50.020"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TC 02">TC 02</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200204 23:19:50.004" level="ERROR">Error in file 'F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Keywords\Main.robot': Importing test library 'F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\CustomLibrary\ExcelReader.py' failed: NameError: name 'dirname' is not defined
+Traceback (most recent call last):
+  File "F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\CustomLibrary\ExcelReader.py", line 3, in &lt;module&gt;
+    filePath = dirname(dirname(abspath(__file__)))
+PYTHONPATH:
+  F:\Study\RobotFramework\RobotFrameworkPilot
+  C:\Python37\python37.zip
+  C:\Python37\DLLs
+  C:\Python37\lib
+  C:\Python37
+  C:\Python37\lib\site-packages
+  C:\Python37\lib\site-packages\win32
+  C:\Python37\lib\site-packages\win32\lib
+  C:\Python37\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
