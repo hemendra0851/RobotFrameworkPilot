@@ -23,10 +23,6 @@ OpenNotepad
    Send    {ESC}
    Take Screenshot    Screen_02.jpg
 
-Sample
-   Log    Hello World
-   Log    TEst
-
 Browser
    Open Browser    ${google.url}    ie
    Maximize Browser Window
@@ -70,6 +66,14 @@ GetData
    Log    ${rowVar['Name']}
    Log    ${rowVar['Age']}
    Log    ${rowVar['Tag_Name']}
+
+SetData
+   [Arguments]    ${Datatable}    ${rowId}
+   ${rowVar}=    readRow    ${Datatable}    ${rowId}
+   writeToExcel    ${rowVar}    Name    Hemendra
+   ${rowVar}=    readRow    ${Datatable}    ${rowId}
+   Log    ${rowVar['Name']}
+
 
 
 

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200206 21:44:11.763" rpa="false">
+<suite id="s1" name="ReadExcelData" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\ReadExcelData.robot">
+<test id="s1-t1" name="ReadExcelData">
+<kw name="GetData" library="Main">
+<arguments>
+<arg>DataTable.Data</arg>
+<arg>TC_01</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200206 21:44:12.775" level="INFO">${rowVar} = {'Name': 'ABC', 'Age': 33, 'Marks': 25, 'Parallel_Instance': nan, 'Run_Flag': 'Y', 'Tag_Name': 'Smoke'}</msg>
+<status status="PASS" starttime="20200206 21:44:12.744" endtime="20200206 21:44:12.775"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.775" level="INFO">ABC</msg>
+<status status="PASS" starttime="20200206 21:44:12.775" endtime="20200206 21:44:12.775"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.775" level="INFO">33</msg>
+<status status="PASS" starttime="20200206 21:44:12.775" endtime="20200206 21:44:12.775"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.775" level="INFO">Smoke</msg>
+<status status="PASS" starttime="20200206 21:44:12.775" endtime="20200206 21:44:12.775"></status>
+</kw>
+<status status="PASS" starttime="20200206 21:44:12.744" endtime="20200206 21:44:12.775"></status>
+</kw>
+<kw name="GetData" library="Main">
+<arguments>
+<arg>Kroll.Sheet1</arg>
+<arg>Run</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200206 21:44:12.791" level="INFO">${rowVar} = {'Name': 'XYZ', 'Age': 12, 'Marks': 34, 'Parallel_Instance': 'Yes', 'Run_Flag': 'N', 'Tag_Name': 'Dry Run'}</msg>
+<status status="PASS" starttime="20200206 21:44:12.775" endtime="20200206 21:44:12.791"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.791" level="INFO">XYZ</msg>
+<status status="PASS" starttime="20200206 21:44:12.791" endtime="20200206 21:44:12.791"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.791" level="INFO">12</msg>
+<status status="PASS" starttime="20200206 21:44:12.791" endtime="20200206 21:44:12.791"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.791" level="INFO">Dry Run</msg>
+<status status="PASS" starttime="20200206 21:44:12.791" endtime="20200206 21:44:12.791"></status>
+</kw>
+<status status="PASS" starttime="20200206 21:44:12.775" endtime="20200206 21:44:12.791"></status>
+</kw>
+<kw name="GetData" library="Main">
+<arguments>
+<arg>Kroll.Sheet2</arg>
+<arg>New</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200206 21:44:12.806" level="INFO">${rowVar} = {'Name': 'ABC', 'Age': 33, 'Marks': 25, 'Parallel_Instance': nan, 'Run_Flag': 'Y', 'Tag_Name': 'Smoke'}</msg>
+<status status="PASS" starttime="20200206 21:44:12.791" endtime="20200206 21:44:12.806"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.806" level="INFO">ABC</msg>
+<status status="PASS" starttime="20200206 21:44:12.806" endtime="20200206 21:44:12.806"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.806" level="INFO">33</msg>
+<status status="PASS" starttime="20200206 21:44:12.806" endtime="20200206 21:44:12.806"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200206 21:44:12.806" level="INFO">Smoke</msg>
+<status status="PASS" starttime="20200206 21:44:12.806" endtime="20200206 21:44:12.806"></status>
+</kw>
+<status status="PASS" starttime="20200206 21:44:12.791" endtime="20200206 21:44:12.806"></status>
+</kw>
+<status status="PASS" starttime="20200206 21:44:12.744" endtime="20200206 21:44:12.806" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200206 21:44:11.775" endtime="20200206 21:44:12.806"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ReadExcelData">ReadExcelData</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
