@@ -3,4 +3,4 @@ Resource    ../Keywords/Main.robot
 
 *** Test Cases ***
 WriteExcelData
-   SetData    DataTable.Data    TC_01
+   SetData    DataTable.Data    TC_02

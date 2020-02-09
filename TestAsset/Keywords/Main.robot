@@ -5,6 +5,7 @@ Library    autoit
 Library    SeleniumLibrary
 Variables    ../Locators/locators.yaml
 Library    ../CustomLibrary/ExcelReader.py
+Library    ../CustomLibrary/ExcelWriter.py
 
 *** Variables ***
 ${temp}    https://www.amazon.com
@@ -69,10 +70,10 @@ GetData
 
 SetData
    [Arguments]    ${Datatable}    ${rowId}
-   ${rowVar}=    readRow    ${Datatable}    ${rowId}
-   writeToExcel    ${rowVar}    Name    Hemendra
-   ${rowVar}=    readRow    ${Datatable}    ${rowId}
-   Log    ${rowVar['Name']}
+   #${rowVar}=    readRow    ${Datatable}    ${rowId}
+   @{value}=    getIndex    Name    TC_02
+   writeToFile    @{value}    hemendra
+
 
 
 
