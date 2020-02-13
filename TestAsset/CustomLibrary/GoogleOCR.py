@@ -7,4 +7,7 @@ im = Image.open("C:\\Users\\Hemendra Pratap\\Downloads\\download.jpg")
 
 text = pytesseract.image_to_string(im, lang = 'eng')
 
+result = 'Hemendra' in text
+
 print(text)
+print(result)
