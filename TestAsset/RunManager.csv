@@ -1,5 +1,5 @@
 ﻿Test Case Name,Browser,Data_File_Names,DataSheets,Run_Flag,Tag_Name
 VerifyNotepad.robot,,DataTable.xlsx,Data,no,
 ReadExcelData.robot,,DataTable.xlsx,Data,no,
-WriteToExcel.robot,,DataTable.xlsx,Data,yes,
-SeleniumCheck.robot,,DataTable.xlsx,Data,no,
+WriteToExcel.robot,,DataTable.xlsx,Data,no,
+SeleniumCheck.robot,,DataTable.xlsx,Data,yes,

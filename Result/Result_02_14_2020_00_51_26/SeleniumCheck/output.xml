@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200214 00:51:28.192" rpa="false">
+<suite id="s1" name="SeleniumCheck" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\SeleniumCheck.robot">
+<test id="s1-t1" name="SeleniumCheck">
+<kw name="Amazon" library="Main">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${amazon.url}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20200214 00:51:31.684" level="INFO">Opening browser 'gc' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20200214 00:51:31.680" endtime="20200214 00:51:42.606"></status>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<arguments>
+<arg>Browser_1.jpg</arg>
+</arguments>
+<msg timestamp="20200214 00:51:43.086" level="INFO" html="yes">&lt;a href="Browser_1.jpg"&gt;&lt;img src="Browser_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200214 00:51:42.606" endtime="20200214 00:51:43.086"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200214 00:51:47.090" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200214 00:51:43.086" endtime="20200214 00:51:47.090"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>'(//span[@class='nav-action-inner'])[1]'</arg>
+</arguments>
+<msg timestamp="20200214 00:51:47.094" level="INFO">Clicking element ''(//span[@class='nav-action-inner'])[1]''.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200214 00:51:48.071" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200214 00:51:47.098" endtime="20200214 00:51:48.075"></status>
+</kw>
+<msg timestamp="20200214 00:51:48.717" level="FAIL">WebDriverException: Message: unknown error: unknown sessionId
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20200214 00:51:47.090" endtime="20200214 00:51:48.717"></status>
+</kw>
+<status status="FAIL" starttime="20200214 00:51:31.680" endtime="20200214 00:51:48.717"></status>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary" type="teardown">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20200214 00:51:48.729" endtime="20200214 00:51:51.052"></status>
+</kw>
+<status status="FAIL" starttime="20200214 00:51:31.676" endtime="20200214 00:51:51.052" critical="yes">WebDriverException: Message: unknown error: unknown sessionId
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20200214 00:51:28.287" endtime="20200214 00:51:51.056"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="SeleniumCheck">SeleniumCheck</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
