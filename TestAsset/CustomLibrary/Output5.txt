@@ -1,0 +1,50 @@
+Statement/Invoice
+
+‘Account #63-160114
+Statement Date: 30-Aug-2018
+Invoice #: 336295
+
+  
+
+== site: to's cabay
+= Miller Crossing 3 Rm# 3103
+14251 50 Street NW
+Edmonton AB TSA S14
+Date ay Comment om
+
+Opening Balance
+Items for Cabay, Lois
+Invoice # 336295
+
+From:
+
+Prescrber
+
+‘Accounts Receivable Dept
+
+Phone. 416-499.9760 of 1-833.633-4797
+Fax 416-443-6234
+
+Email: accounting@imedisystem.com
+
+Medisystem Pharmacy West Limited
+1639 - 32nd Ave NE
+toll free phone # 1-866-810-3886
+(Calgary AB T2E 7A3
+Tel: (403) 255-3886
+Paid By
+‘008/ ue By
+Cost Fee Other HST/GST Cumner
+
+0.00
+
+01-Aug-2018 10 Rxa21629864OpticomOp 02230621 MO.DeborahWhte 12.17 0.00 0.00 0.00 12.17
+
+MLCOph Sotn) 256
+Patient Totals:
+Combined Totals:
+
+Medication Dispensed - With No Charge to Patient
+
+1217 0.00 0.00 0.00 127
+1217 0.00 0.00 0.00 1217
