@@ -12,6 +12,7 @@ class listener(object):
 
     def start_test(self,name,attributes):
         print("\nExecution Started for " + name + " at : " + datetime.now().strftime("%Y-%b-%d_%I:%M:%S_%p"))
+        #print(BuiltIn().get_variable_value('${TEST NAME}'))
 
     def end_test(self,name,attributes):        
         print("Execution Finished for " + name + " at : " + datetime.now().strftime("%Y-%b-%d_%I:%M:%S_%p"))

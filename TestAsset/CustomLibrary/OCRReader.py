@@ -14,10 +14,9 @@ import cv2
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 def getTextFromImg(imgPath):
-	img = Image.open(imgPath)
+	img = Image.open(imgPath)»
 	#imgText = pytesseract.image_to_string(img, lang='eng', config='--psm 6')
-	imgText = pytesseract.image_to_string(cv2.cvtColor(cv2.imread(imgPath), cv2.COLOR_BGR2GRAY), lang ='eng')
-
+	imgText = pytesseract.image_to_string(cv2.cvtColor(cv2.imread(imgPath), cv2.COLOR_BGR2GRAY), lang = 'eng')
 	return imgText
 
 def saveToFile(imgText):
@@ -28,7 +27,14 @@ def saveToFile(imgText):
 def validateText(imgText, str):
 	return str in imgText
 
+def openCVreader(imgPath):
+	 img = cv2.imread(imgPath, 1)
+	 cv2.imshow('img', img)
+	 cv2.waitKey(0)
+	 cv2.destroyAllWindows()
+	 imgText = pytesseract.image_to_string(img, lang = 'eng', config = '--psm 6')
+	 print('\n' + imgText)
 
-imgPath = "img6.jpg"
-#print(getTextFromImg(imgPath))
+imgPath = "img2.jpg"
 saveToFile(getTextFromImg(imgPath))
+#openCVreader(imgPath)

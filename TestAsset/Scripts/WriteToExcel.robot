@@ -2,5 +2,5 @@
 Resource    ../Keywords/Main.robot
 
 *** Test Cases ***
-WriteExcelData
+WriteData
    SetData    DataTable.Data    TC_02

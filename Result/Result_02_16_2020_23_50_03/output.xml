@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 3.1.2 (Python 3.7.4 on win32)" generated="20200216 23:50:17.685" rpa="false">
+<suite id="s1" name="Combined_Suite">
+<suite id="s1-s1" name="VerifyNotepad" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\VerifyNotepad.robot">
+<test id="s1-s1-t1" name="VerifyAutoIT">
+<kw name="OpenNotepad" library="Main">
+<kw name="Send" library="autoit">
+<doc>Sends simulated keystrokes to the active window.
+:param send_text:
+:param mode: Changes how "keys" is processed:
+    flag = 0 (default), Text contains special characters like + and ! to
+     indicate SHIFT and ALT key presses.
+    flag = 1, keys are sent raw.
+:return:</doc>
+<arguments>
+<arg>{LWINDOWN}</arg>
+</arguments>
+<status status="PASS" starttime="20200216 23:50:05.246" endtime="20200216 23:50:05.261"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200216 23:50:06.261" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200216 23:50:05.261" endtime="20200216 23:50:06.261"></status>
+</kw>
+<kw name="Send" library="autoit">
+<doc>Sends simulated keystrokes to the active window.
+:param send_text:
+:param mode: Changes how "keys" is processed:
+    flag = 0 (default), Text contains special characters like + and ! to
+     indicate SHIFT and ALT key presses.
+    flag = 1, keys are sent raw.
+:return:</doc>
+<arguments>
+<arg>{r}</arg>
+</arguments>
+<status status="PASS" starttime="20200216 23:50:06.261" endtime="20200216 23:50:06.261"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200216 23:50:07.262" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200216 23:50:06.261" endtime="20200216 23:50:07.262"></status>
+</kw>
+<kw name="Send" library="autoit">
+<doc>Sends simulated keystrokes to the active window.
+:param send_text:
+:param mode: Changes how "keys" is processed:
+    flag = 0 (default), Text contains special characters like + and ! to
+     indicate SHIFT and ALT key presses.
+    flag = 1, keys are sent raw.
+:return:</doc>
+<arguments>
+<arg>{LWINUP}</arg>
+</arguments>
+<status status="PASS" starttime="20200216 23:50:07.262" endtime="20200216 23:50:07.262"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200216 23:50:08.262" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200216 23:50:07.262" endtime="20200216 23:50:08.262"></status>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<arguments>
+<arg>Screen_01.jpg</arg>
+</arguments>
+<msg timestamp="20200216 23:50:08.418" level="INFO" html="yes">&lt;a href="Screen_01.jpg"&gt;&lt;img src="Screen_01.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200216 23:50:08.262" endtime="20200216 23:50:08.418"></status>
+</kw>
+<kw name="Win Get Title" library="autoit">
+<doc>:param title:
+:param text:
+:return:</doc>
+<arguments>
+<arg>[ACTIVE]</arg>
+</arguments>
+<assign>
+<var>${WinTitle}</var>
+</assign>
+<msg timestamp="20200216 23:50:08.418" level="INFO">${WinTitle} = Run</msg>
+<status status="PASS" starttime="20200216 23:50:08.418" endtime="20200216 23:50:08.418"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${WinTitle}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:08.418" level="INFO">Run</msg>
+<status status="PASS" starttime="20200216 23:50:08.418" endtime="20200216 23:50:08.418"></status>
+</kw>
+<kw name="Send" library="autoit">
+<doc>Sends simulated keystrokes to the active window.
+:param send_text:
+:param mode: Changes how "keys" is processed:
+    flag = 0 (default), Text contains special characters like + and ! to
+     indicate SHIFT and ALT key presses.
+    flag = 1, keys are sent raw.
+:return:</doc>
+<arguments>
+<arg>{ESC}</arg>
+</arguments>
+<status status="PASS" starttime="20200216 23:50:08.418" endtime="20200216 23:50:08.433"></status>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<arguments>
+<arg>Screen_02.jpg</arg>
+</arguments>
+<msg timestamp="20200216 23:50:08.512" level="INFO" html="yes">&lt;a href="Screen_02.jpg"&gt;&lt;img src="Screen_02.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200216 23:50:08.433" endtime="20200216 23:50:08.512"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:05.246" endtime="20200216 23:50:08.512"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:05.246" endtime="20200216 23:50:08.512" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200216 23:50:03.745" endtime="20200216 23:50:08.512"></status>
+</suite>
+<suite id="s1-s2" name="ReadExcelData" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\ReadExcelData.robot">
+<test id="s1-s2-t1" name="ReadData">
+<kw name="GetData" library="Main">
+<arguments>
+<arg>DataTable.Data</arg>
+<arg>TC_01</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200216 23:50:11.028" level="INFO">${rowVar} = {'Name': 'ABC', 'Age': 'Test', 'Marks': 25, 'Parallel_Instance': nan, 'Run_Flag': 'Y', 'Tag_Name': 'Smoke'}</msg>
+<status status="PASS" starttime="20200216 23:50:11.012" endtime="20200216 23:50:11.028"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.028" level="INFO">ABC</msg>
+<status status="PASS" starttime="20200216 23:50:11.028" endtime="20200216 23:50:11.028"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.028" level="INFO">Test</msg>
+<status status="PASS" starttime="20200216 23:50:11.028" endtime="20200216 23:50:11.028"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.028" level="INFO">Smoke</msg>
+<status status="PASS" starttime="20200216 23:50:11.028" endtime="20200216 23:50:11.028"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:11.012" endtime="20200216 23:50:11.043"></status>
+</kw>
+<kw name="GetData" library="Main">
+<arguments>
+<arg>Kroll.Sheet1</arg>
+<arg>Run</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200216 23:50:11.059" level="INFO">${rowVar} = {'Name': 'XYZ', 'Age': 12, 'Marks': 34, 'Parallel_Instance': 'Yes', 'Run_Flag': 'N', 'Tag_Name': 'Dry Run'}</msg>
+<status status="PASS" starttime="20200216 23:50:11.043" endtime="20200216 23:50:11.059"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.059" level="INFO">XYZ</msg>
+<status status="PASS" starttime="20200216 23:50:11.059" endtime="20200216 23:50:11.059"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.059" level="INFO">12</msg>
+<status status="PASS" starttime="20200216 23:50:11.059" endtime="20200216 23:50:11.059"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.059" level="INFO">Dry Run</msg>
+<status status="PASS" starttime="20200216 23:50:11.059" endtime="20200216 23:50:11.059"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:11.043" endtime="20200216 23:50:11.059"></status>
+</kw>
+<kw name="GetData" library="Main">
+<arguments>
+<arg>Kroll.Sheet2</arg>
+<arg>New</arg>
+</arguments>
+<kw name="Read Row" library="ExcelReader">
+<arguments>
+<arg>${Datatable}</arg>
+<arg>${rowId}</arg>
+</arguments>
+<assign>
+<var>${rowVar}</var>
+</assign>
+<msg timestamp="20200216 23:50:11.074" level="INFO">${rowVar} = {'Name': 'ABC', 'Age': 33, 'Marks': 25, 'Parallel_Instance': nan, 'Run_Flag': 'Y', 'Tag_Name': 'Smoke'}</msg>
+<status status="PASS" starttime="20200216 23:50:11.059" endtime="20200216 23:50:11.074"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.074" level="INFO">ABC</msg>
+<status status="PASS" starttime="20200216 23:50:11.074" endtime="20200216 23:50:11.074"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Age']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.074" level="INFO">33</msg>
+<status status="PASS" starttime="20200216 23:50:11.074" endtime="20200216 23:50:11.074"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${rowVar['Tag_Name']}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:11.074" level="INFO">Smoke</msg>
+<status status="PASS" starttime="20200216 23:50:11.074" endtime="20200216 23:50:11.074"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:11.059" endtime="20200216 23:50:11.074"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:11.012" endtime="20200216 23:50:11.074" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="AutomaticVariables">
+<kw name="AutomaticVariables" library="Main">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${OUTPUT_DIR}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:13.075" level="INFO">F:\Study\RobotFramework\RobotFrameworkPilot\Result\Result_02_16_2020_23_50_03\ReadExcelData\AutomaticVariables</msg>
+<status status="PASS" starttime="20200216 23:50:13.075" endtime="20200216 23:50:13.075"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${TEST NAME}</arg>
+</arguments>
+<msg timestamp="20200216 23:50:13.075" level="INFO">AutomaticVariables</msg>
+<status status="PASS" starttime="20200216 23:50:13.075" endtime="20200216 23:50:13.075"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:13.075" endtime="20200216 23:50:13.075"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:13.075" endtime="20200216 23:50:13.075" critical="yes">*HTML* Test added from merged output.</status>
+</test>
+<status status="PASS" starttime="N/A" endtime="N/A" elapsedtime="62"></status>
+</suite>
+<suite id="s1-s3" name="WriteToExcel" source="F:\Study\RobotFramework\RobotFrameworkPilot\TestAsset\Scripts\WriteToExcel.robot">
+<test id="s1-s3-t1" name="WriteData">
+<kw name="SetData" library="Main">
+<arguments>
+<arg>DataTable.Data</arg>
+<arg>TC_02</arg>
+</arguments>
+<kw name="Get Index" library="ExcelWriter">
+<arguments>
+<arg>Name</arg>
+<arg>TC_02</arg>
+</arguments>
+<assign>
+<var>@{value}</var>
+</assign>
+<msg timestamp="20200216 23:50:16.419" level="INFO">@{value} = [ 1 | 1 ]</msg>
+<status status="PASS" starttime="20200216 23:50:16.403" endtime="20200216 23:50:16.419"></status>
+</kw>
+<kw name="Write To File" library="ExcelWriter">
+<arguments>
+<arg>@{value}</arg>
+<arg>hemendra</arg>
+</arguments>
+<status status="PASS" starttime="20200216 23:50:16.419" endtime="20200216 23:50:16.435"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:16.403" endtime="20200216 23:50:16.435"></status>
+</kw>
+<status status="PASS" starttime="20200216 23:50:16.403" endtime="20200216 23:50:16.435" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200216 23:50:15.075" endtime="20200216 23:50:16.435"></status>
+</suite>
+<status status="PASS" starttime="N/A" endtime="N/A" elapsedtime="6189"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Combined_Suite">Combined_Suite</stat>
+<stat pass="1" fail="0" id="s1-s1" name="VerifyNotepad">Combined_Suite.VerifyNotepad</stat>
+<stat pass="2" fail="0" id="s1-s2" name="ReadExcelData">Combined_Suite.ReadExcelData</stat>
+<stat pass="1" fail="0" id="s1-s3" name="WriteToExcel">Combined_Suite.WriteToExcel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

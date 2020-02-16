@@ -2,6 +2,6 @@
 Resource    ../Keywords/Main.robot
 
 *** Test Cases ***
-VerifyNotepad
+VerifyAutoIT
    OpenNotepad
 

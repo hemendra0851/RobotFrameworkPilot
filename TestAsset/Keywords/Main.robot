@@ -24,18 +24,6 @@ OpenNotepad
    Send    {ESC}
    Take Screenshot    Screen_02.jpg
 
-Browser
-   Open Browser    ${google.url}    ie
-   Maximize Browser Window
-   Take Screenshot    Browser_1.jpg
-   Input Text    ${google.edtSearch}    ${google.txtSearch}
-   Send    {ENTER}
-   Wait Until Page Contains Element    ${google.edtLink}
-   Take Screenshot    Browser_2.jpg
-   Click Element    ${google.edtLink}
-   Wait Until Page Contains Element    ${google.imgLogo}
-   Take Screenshot    Browser_3.jpg
-
 Amazon
    Open Browser    ${amazon.url}    gc
    #Maximize Browser Window
@@ -74,6 +62,9 @@ SetData
    @{value}=    getIndex    Name    TC_02
    writeToFile    @{value}    hemendra
 
+AutomaticVariables
+   Log    ${OUTPUT_DIR}
+   Log    ${TEST NAME}
 
 
 
